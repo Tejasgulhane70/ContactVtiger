@@ -94,6 +94,7 @@ public class ContactBase
     	
     	driver.findelement(By.xpath("//a[text()='Contacts']")).sendkeys("1234564789");
     	
+    	
     	//click on contact plus button
     	 cp.getContactbtnplus().click();
     	 
