@@ -1,8 +1,5 @@
 package Base_Class_POM;
 
-
-
-
 import java.io.IOException;
 
 
@@ -94,6 +91,8 @@ public class ContactBase
     	//pass the data of lastname textfield taken from excelsheet
     	String exceldata3 = eutils.getDataFromExcelFile2("Sheet1", 1, 2);
     	cp.getLastnametf().sendKeys(exceldata3);
+    	
+    	driver.findelement(By.xpath("//a[text()='Contacts']")).sendkeys("1234564789");
     	
     	//click on contact plus button
     	 cp.getContactbtnplus().click();
